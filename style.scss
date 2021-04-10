@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hover-effect-overlap {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  &__img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
